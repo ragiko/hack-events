@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.1.1'
-gem 'sqlite3', '~> 1.3.9'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '~> 2.5.0'
 gem 'coffee-rails', '~> 4.0.1'
@@ -24,6 +23,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'sqlite3', '~> 1.3.9'
   gem 'rspec-rails', '~> 3.0.0.beta', github: 'rspec/rspec-rails'
   gem 'rspec-core', '~> 3.0.0.beta', github: 'rspec/rspec-core'
   gem 'rspec-expectations', '~> 3.0.0.beta', github: 'rspec/rspec-expectations'
@@ -40,5 +40,6 @@ group :test do
 end
 
 group :staging, :production do
+  gem 'pg'
   gem 'unicorn'
 end
