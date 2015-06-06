@@ -54,3 +54,4 @@ http://localhost:3000/ にアクセスすると、トップページが表示さ
 ```
 ./bin/bundle exec rspec spec/models/event_spec.rb
 ```
+
